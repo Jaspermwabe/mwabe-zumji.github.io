@@ -26,3 +26,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+window.addEventListener("scroll", handleScroll);
+
+function handleScroll() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (window.pageYOffset > 300) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
