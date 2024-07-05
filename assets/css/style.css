@@ -207,3 +207,31 @@
 #main #scrollToTopBtn:hover {
   background-color: #555;
 }
+
+@media screen and (max-width: 736px) {
+#intro {
+  min-height: 47vh;
+}
+#main .slideshow-container {
+  max-width: 400px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+.prev, .next {
+  top: 35%;
+}
+.next {
+  left: 310px;
+}
+
+#top .row {
+padding-left: 30px;
+}
+#top a{
+margin-left: 25px;
+}
+#top .image {
+  padding-right: 3px;
+  left: 15px;
+}
+}
